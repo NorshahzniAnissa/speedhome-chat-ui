@@ -1,0 +1,258 @@
+<!-- A chat user interface made for Speedhome Intership Position application. This user interface is made using raw HTML and CSS. -->
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Speedhome Chat UI</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    </head>
+
+    <body>
+    
+        <!-- Navigation Bar -->
+
+        <nav class="main-menu">
+
+            <div class="settings">
+            <div class="scrollbar" id="style-1">
+
+            <img src="images/speedhome.png" alt="Daryl Duckerman" style="width:60px;height:60px;"/>
+                    
+            <ul>
+
+                <li>                                   
+                    <a href="">
+                        <img src="images/profile.png" alt="Profile" style="width:40px;height:40px;"/>
+                        <i class="fa fa-home fa-lg"></i>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                </li>   
+                
+                <li>                                 
+                    <a href="">
+                        <img src="images/menu.jpg" alt="Home" style="width:40px;height:40px;"/>
+                        <i class="fa fa-user fa-lg"></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>   
+            
+                
+                <li>                                 
+                    <a href="">
+                        <img src="images/phone.png" alt="Contact" style="width:30px;height:30px;"/>
+                        <i class="fa fa-envelope-o fa-lg"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>   
+            </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Chat Interface -->
+
+        <div id="chat-container">
+
+            <!-- Search Bar -->
+
+            <div id="search-container">
+                <input text="text" placeholder="Search"/>
+            </div>
+
+            <!-- Profile -->
+
+            <div id="profile-information">
+                <img src="images/7.jpg" alt="Daryl Duckerman"/>
+                <div class="profile-text">DARYL DUCKERMAN</div>
+                <div class="contact-text">Contact Details</div>
+                <div class="information-text">+6012457854</div>
+                <div class="information-text">darylduck@gmail.com</div>
+            </div>
+
+            <!-- Conversation List -->
+            
+            <div id="conversation-list">
+                <div class="conversation">
+                    <img src="images/1.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        Hero Alom
+                    </div>
+                    <div class="created-date">
+                        02:19pm
+                    </div>
+                    <div class="conversation-message">
+                        Can you please send me the files needed for the new project
+                    </div>
+                </div>
+                <div class="conversation active">
+                    <img src="images/7.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        Daryl Duckerman
+                    </div>
+                    <div class="created-date">
+                        02:19pm
+                    </div>
+                    <div class="conversation-message">
+                        Ok great! Thank you, have a nice day
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/3.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        Jonah Smith
+                    </div>
+                    <div class="created-date">
+                        02:15pm
+                    </div>
+                    <div class="conversation-message">
+                        Hey, do you mind helping me? I need an opinion on the
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/4.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        Barry Beckham
+                    </div>
+                    <div class="created-date">
+                        12:21pm
+                    </div>
+                    <div class="conversation-message">
+                        All I know is where I live it's a bit different
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/5.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        William Stone
+                    </div>
+                    <div class="created-date">
+                        11:11am
+                    </div>
+                    <div class="conversation-message">
+                        Hey! Congratulations on you internship
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/6.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        Erica Bonham
+                    </div>
+                    <div class="created-date">
+                        Apr 16
+                    </div>
+                    <div class="conversation-message">
+                        This is a message from us to you, please remember to
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/2.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        Will Sheeran
+                    </div>
+                    <div class="created-date">
+                        10:40am
+                    </div>
+                    <div class="conversation-message">
+                        Hey, do you mind sending the newly fixed files
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="images/8.jpg" alt="Daryl Duckerman"/>
+                    <div class="title-text">
+                        Christian Paul
+                    </div>
+                    <div class="created-date">
+                        09:40am
+                    </div>
+                    <div class="conversation-message">
+                        Yes, I think it is on the 26th December 2021
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Message -->
+    
+            <div id="new-message-container">
+                <a href="#">+</a>
+            </div>
+
+            <!-- Chat Header -->
+
+            <div id="chat-title">
+                <span> Daryl Duckerman</span>
+                <img src="images/trash.svg" alt="Delete Conversation"/>
+            </div>
+
+            <!-- Messages -->
+    
+            <div id="chat-message-list">
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <div class="message-text">Ok great! Thank you, have a nice day</div>
+                        <div class="message-time">02:19pm</div>
+                    </div>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">I think I will send it through email. There are some things I need to adress as well</div>
+                        <div class="message-time">02:19pm</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <div class="message-text">Oh you can attach the files here. But if it is easier for you, you can send it through email.</div>
+                        <div class="message-time">02:15pm</div>
+                    </div>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">Sure, how can I send it to you? Do you want it by email or do you prefer for me to send it here?</div>
+                        <div class="message-time">02:14pm</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <div class="message-text">Great! Do you think you can send the files soon?</div>
+                        <div class="message-time">02:12pm</div>
+                    </div>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">Yeah just finishing up on the details</div>
+                        <div class="message-time">02:11pm</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <div class="message-text">Just wanted to ask you. Have you completed our new project UI?</div>
+                        <div class="message-time">02:11pm</div>
+                    </div>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">Hey! Doing good!</div>
+                        <div class="message-time">02:10pm</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <div class="message-text">Hello! How's it going!</div>
+                        <div class="message-time">02:10pm</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Input -->
+    
+            <div id="chat-form">
+                <img src="images/attachment.svg" alt="Add Attachment"/>
+                <input type="text" placeholder="Type a message..."/>
+            </div>         
+
+        </div>
+    </body>
+
+</html>
